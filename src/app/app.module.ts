@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { View1Component } from './view1/view1.component';
 import { View2Component } from './view2/view2.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

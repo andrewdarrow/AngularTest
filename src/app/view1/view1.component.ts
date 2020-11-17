@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ValueService } from '../value.service';
+import {MatSliderModule} from '@angular/material/slider';
 
 @Component({
   selector: 'app-view1',
