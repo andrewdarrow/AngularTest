@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ValueService } from '../value.service';
 
 @Component({
   selector: 'app-view2',
