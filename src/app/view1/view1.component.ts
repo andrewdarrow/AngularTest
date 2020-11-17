@@ -8,7 +8,13 @@ import { ValueService } from '../value.service';
 })
 export class View1Component implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.sayHello(); 
+  }
+
+  private sayHello() {
+    console.log('Hello, View1Component component has been created');
+  }
 
   ngOnInit(): void {
   }
