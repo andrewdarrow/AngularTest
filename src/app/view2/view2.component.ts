@@ -8,7 +8,7 @@ import { ValueService } from '../value.service';
 })
 export class View2Component implements OnInit {
 
-  view2Value: number = 22;
+  view2Value: number = 22; // Initialize to unique value for debugging purposes
 
   constructor(value:ValueService) {
     this.view2Value = value.getValue();
@@ -16,8 +16,7 @@ export class View2Component implements OnInit {
   }
 
   private sayHello() {
-    console.log('Hello, View2Component component has been created');
-    console.log(this.view2Value);
+    console.log(this.constructor.name + ' component has been created with an initial value of ' + this.view2Value);
   }
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ValueService } from '../value.service';
-import { MatSliderModule } from '@angular/material/slider';
+import { MatSliderChange, MatSliderModule } from '@angular/material/slider';
 
 @Component({
   selector: 'app-view1',
@@ -9,19 +9,26 @@ import { MatSliderModule } from '@angular/material/slider';
 })
 export class View1Component implements OnInit {
 
-  view1Value: number = 11;
+  view1Value: number = 11; // Initialize to unique value for debugging purposes
 
-  constructor(value:ValueService) {
-    this.view1Value = value.getValue();
+  constructor(private valueService: ValueService) {
+    this.view1Value = this.valueService.getValue();
     this.sayHello(); 
   }
 
   private sayHello() {
-    console.log('Hello, View1Component component has been created');
-    console.log(this.view1Value);
+    console.log(this.constructor.name + ' component has been created with an initial value of ' + this.view1Value);
+  }
+
+  public onSliderChange(event: MatSliderChange) {
+    console.log('****************************************');
+    console.log('MatSliderChange, new value: ' + event.value);
+    console.log('Two-way binding check on view1Value: ' + this.view1Value);
+    this.valueService.setValue(this.view1Value);
   }
 
   ngOnInit(): void {
   }
 
 }
+

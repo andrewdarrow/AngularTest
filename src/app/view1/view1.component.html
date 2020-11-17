@@ -2,12 +2,6 @@
     <header>
         <h4><b>View1 Component</b></h4>
     </header>
-    <mat-slider 
-        min="0" 
-        max="100" 
-        step="1"
-        thumbLabel="true" 
-        tickInterval="1"
-    >
-    </mat-slider>
+    <mat-slider #slider min="0" max="100" step="1" tickInterval="1" [(ngModel)]="view1Value" (change)="onSliderChange($event)"></mat-slider>
+    <h2>slider value: {{slider.value}}</h2>
 </html>
