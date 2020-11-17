@@ -8,12 +8,16 @@ import { ValueService } from '../value.service';
 })
 export class View2Component implements OnInit {
 
-  constructor() { 
+  view2Value: number = 22;
+
+  constructor(value:ValueService) {
+    this.view2Value = value.getValue();
     this.sayHello(); 
   }
 
   private sayHello() {
     console.log('Hello, View2Component component has been created');
+    console.log(this.view2Value);
   }
 
   ngOnInit(): void {
