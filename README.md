@@ -9,11 +9,11 @@ Simple project demonstrating Angular concepts like components, services and rout
 * OS: Ubuntu 20.04.1 LTS
 
 * Angular: 11.0.0
-* ... animations, cdk, common, compiler, compiler-cli, core, forms
-* ... material, platform-browser, platform-browser-dynamic, router
+    * ... animations, cdk, common, compiler, compiler-cli, core, forms
+    * ... material, platform-browser, platform-browser-dynamic, router
 * Ivy Workspace: Yes
 
-Package/Version                        
+## Package/Version                        
 
 * @angular-devkit/architect       0.1100.1
 * @angular-devkit/build-angular   0.1100.1
