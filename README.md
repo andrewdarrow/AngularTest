@@ -1,24 +1,26 @@
 # AngularTest
 
-### This project was generated with the following:
+Simple project demonstrating Angular concepts like components, services and routing.
 
-Angular CLI: 11.0.1
-Node: 15.2.0
-OS: Ubuntu 20.04.1 LTS
+## This project was generated with the following:
 
-Angular: 11.0.0
-... animations, cdk, common, compiler, compiler-cli, core, forms
-... material, platform-browser, platform-browser-dynamic, router
-Ivy Workspace: Yes
+* Angular CLI: 11.0.1
+* Node: 15.2.0
+* OS: Ubuntu 20.04.1 LTS
 
-Package                         Version
+* Angular: 11.0.0
+* ... animations, cdk, common, compiler, compiler-cli, core, forms
+* ... material, platform-browser, platform-browser-dynamic, router
+* Ivy Workspace: Yes
 
-@angular-devkit/architect       0.1100.1
-@angular-devkit/build-angular   0.1100.1
-@angular-devkit/core            11.0.1
-@angular-devkit/schematics      11.0.1
-@angular/cli                    11.0.1
-@schematics/angular             11.0.1
-@schematics/update              0.1100.1
-rxjs                            6.6.3
-typescript                      4.0.5
+Package/Version                        
+
+* @angular-devkit/architect       0.1100.1
+* @angular-devkit/build-angular   0.1100.1
+* @angular-devkit/core            11.0.1
+* @angular-devkit/schematics      11.0.1
+* @angular/cli                    11.0.1
+* @schematics/angular             11.0.1
+* @schematics/update              0.1100.1
+* rxjs                            6.6.3
+* typescript                      4.0.5
