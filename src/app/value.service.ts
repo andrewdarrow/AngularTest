@@ -21,9 +21,10 @@ export class ValueService {
   public setValue(newValue: number) {
     if(Number.isInteger(newValue) && newValue >= 0 && newValue <= 100) {
       this.myValue = newValue;
+      console.log(`ValueService - Value updated: ${newValue}`);
     }
     else {
-      console.log('Invalid value entered.');
+      console.log('ValueService - Invalid value entered: ' + newValue);
     }
   }  
 }
