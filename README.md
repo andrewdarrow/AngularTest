@@ -2,7 +2,7 @@
 
 Simple project demonstrating Angular concepts like components, services and routing.
 
-## This project was generated with the following:
+## This project was created with the following:
 
 * Angular CLI: 11.0.1
 * Node: 15.2.0
