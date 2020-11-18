@@ -24,3 +24,14 @@ Simple project demonstrating Angular concepts like components, services and rout
 * @schematics/update              0.1100.1
 * rxjs                            6.6.3
 * typescript                      4.0.5
+
+## Getting Started
+
+```
+# Install dependencies
+npm install
+
+# Build and serve app locally
+ng serve 
+```
+The app should now be running on http://localhost:4200/, enjoy!
