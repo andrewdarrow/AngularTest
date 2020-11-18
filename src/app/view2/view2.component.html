@@ -1,11 +1,11 @@
 <div class="w3-container w3-center w3-padding-48 w3-white">
-    <h4><b>View2 Component</b></h4>
+    <h2><b>View2 Component</b></h2>
     <mat-form-field class="example-form-field">
         <mat-label>Input a value</mat-label>
         <input #matinput matInput type="number" [(ngModel)]="view2Value" (ngModelChange)="OnInputChange($event)">
-        <button mat-button *ngIf="view2Value" matSuffix mat-icon-button aria-label="Clear" (click)="view2Value=0">
+        <!-- <button mat-button *ngIf="view2Value" matSuffix mat-icon-button aria-label="Clear" (click)="view2Value=0">
           <mat-icon>close</mat-icon>
-        </button>
+        </button> -->
       </mat-form-field>
     <h2>Input value: {{matinput.value}}</h2>
 </div>
